@@ -1,7 +1,9 @@
 cmake_minimum_required(VERSION 3.6)
 
-find_package(OpenSSL REQUIRED)
-include_directories(${OPENSSL_INCLUDE_DIR} ${INC_DIR}/workflow)
+#find_package(OpenSSL REQUIRED)
+include_directories(
+    E:/kSource/pythonx/cppx/cppx/openssl-1.1.1w/include
+    ${INC_DIR}/workflow) # ${OPENSSL_INCLUDE_DIR}
 
 if (WIN32)
 	add_subdirectory(kernel_win)
