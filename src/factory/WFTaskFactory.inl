@@ -258,7 +258,7 @@ bool WFComplexClientTask<REQ, RESP, CTX>::set_port()
 
 		if (port_str)
 		{
-			uri_.port = strdup(port_str);
+			uri_.port = _strdup(port_str);
 			if (uri_.port)
 				return true;
 
